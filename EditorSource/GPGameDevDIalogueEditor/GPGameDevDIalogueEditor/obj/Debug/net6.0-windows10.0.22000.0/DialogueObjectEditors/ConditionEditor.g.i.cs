@@ -103,8 +103,7 @@ namespace GPGameDevDialogueEditor.DialogueObjectEditors {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;V1.0.0.0;component/dialogueobjecteditors/conditioneditor" +
-                    ".xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;component/dialogueobjecteditors/conditioneditor.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\DialogueObjectEditors\ConditionEditor.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\GPGameDevDialogueSystem\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib.csproj" />
+    <ProjectReference Include="..\..\..\Libraries\GPGameDevDialogueSystem\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

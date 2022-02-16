@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ksamu\\OneDrive\\Desktop\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {}
+    "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ksamu\\OneDrive\\Desktop\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
+    "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksamu\\OneDrive\\Desktop\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
+        "projectUniqueName": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
         "projectName": "GPGameDevDialogueSystemLib",
-        "projectPath": "C:\\Users\\ksamu\\OneDrive\\Desktop\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
+        "projectPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
         "packagesPath": "C:\\Users\\ksamu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksamu\\OneDrive\\Desktop\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\obj\\",
+        "outputPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
