@@ -1,0 +1,17 @@
+﻿<UserControl x:Name="lineStarter"
+             
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GPGameDevDialogueEditor.UICustomObjects"
+             xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="GPGameDevDialogueEditor.UICustomObjects.LineStarter"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Canvas x:Name="LocalCanvas">
+        <Ellipse Width="15" Height="15" Stroke="Black" StrokeThickness="2" Fill="GhostWhite" MouseLeftButtonDown="Ellipse_MouseLeftButtonDown" ToolTip="Drag to a square in the upper-left corner of another talk to link that talk"/>
+        <Line x:Name="x1" Visibility="Hidden" X2="15" Y2="15" Stroke="Red" StrokeThickness="2"></Line>
+        <Line x:Name="x2" Visibility="Hidden" X1="15" X2="0" Y2="15" Stroke="Red" StrokeThickness="2"></Line>
+        <Rectangle x:Name="ToolTipRectangle" Visibility="Hidden" Fill="Transparent" Width="15" Height="15" ToolTip="This path will never be undertaken"></Rectangle>
+    </Canvas>
+</UserControl>

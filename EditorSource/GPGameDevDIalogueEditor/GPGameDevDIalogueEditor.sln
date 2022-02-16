@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPGameDevDialogueEditor", "GPGameDevDIalogueEditor\GPGameDevDialogueEditor.csproj", "{9DE6D62D-F982-437E-A057-4005ACDE0EAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPGameDevDialogueSystemLib", "..\GPGameDevDialogueSystem\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib.csproj", "{E18B108B-A130-4EE5-87B9-A67B236B31A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DE6D62D-F982-437E-A057-4005ACDE0EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE6D62D-F982-437E-A057-4005ACDE0EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE6D62D-F982-437E-A057-4005ACDE0EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE6D62D-F982-437E-A057-4005ACDE0EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E18B108B-A130-4EE5-87B9-A67B236B31A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E18B108B-A130-4EE5-87B9-A67B236B31A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E18B108B-A130-4EE5-87B9-A67B236B31A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E18B108B-A130-4EE5-87B9-A67B236B31A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEC4563C-7610-42CF-A032-E332F536AED6}
+	EndGlobalSection
+EndGlobal

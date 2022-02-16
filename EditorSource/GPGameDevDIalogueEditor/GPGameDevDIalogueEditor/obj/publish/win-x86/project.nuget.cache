@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "sJclXZE9TeRQTiuLc0j3Qdq6w58lfJ8txuXy8gpESXJA4+CrKFCxBICb75k4ibU1/usho6tR/eAldAUflLFpaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ksamu\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ksamu\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.2\\microsoft.netcore.app.runtime.win-x86.6.0.2.nupkg.sha512",
+    "C:\\Users\\ksamu\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.2\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.2.nupkg.sha512",
+    "C:\\Users\\ksamu\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.2\\microsoft.aspnetcore.app.runtime.win-x86.6.0.2.nupkg.sha512",
+    "C:\\Users\\ksamu\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.22\\microsoft.windows.sdk.net.ref.10.0.22000.22.nupkg.sha512"
+  ],
+  "logs": []
+}

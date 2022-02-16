@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uT/4ymPw8R5h4bgScb0vHEUH1SknrLhO+UV0vfWava0vs/GF0xzfTYLI1xSZ8eQYBwq19KEwJ03jcEcMqPllVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ksamu\\OneDrive\\Desktop\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ksamu\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ksamu\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.22\\microsoft.windows.sdk.net.ref.10.0.22000.22.nupkg.sha512"
+  ],
+  "logs": []
+}

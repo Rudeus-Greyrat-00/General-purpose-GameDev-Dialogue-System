@@ -1,0 +1,103 @@
+﻿<Window x:Class="GPGameDevDialogueEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GPGameDevDialogueEditor"
+        xmlns:uc="clr-namespace:GPGameDevDialogueEditor.DialogueObjectEditors"
+        xmlns:co="clr-namespace:GPGameDevDialogueEditor.UICustomObjects"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="GPEditor" Height="1150" Width="1800" Keyboard.KeyDown="ShortcoutManager" Style="{DynamicResource CustomWindowStyle}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="20" Height="*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Menu>
+                <MenuItem Header="File">
+                    <MenuItem Header="New"  Click="New" Height="25" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/NewIcon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Open" Click="Open" Height="25" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/OpenIcon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Save (Ctrl + S)" Height="25" Click="Save" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/SaveIcon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="Save as" Height="25" Click="SaveAs" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/SaveAsIcon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Export (Ctrl + E)" Height="25" Click="Export" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/ExportIcon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator></Separator>
+                        <MenuItem Header="Exit" Height="25" Template="{DynamicResource SingleDropDownMenuItem}" Click="Exit"/>
+                </MenuItem>
+            </Menu>
+            <Menu>
+                <MenuItem Header="_Edit">
+                    <MenuItem Header="New talk (Ctrl + T)" Click="AddTalk" Height="25" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/TalkIcon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Test dialogue (F5)" Click="TestDialogue" Height="25" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/TestDialogueIcon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+            <Menu>
+                <MenuItem Header="_View">
+                    <MenuItem Header="Initial position and scale" Click="ResetView" Height="25" Template="{DynamicResource SingleDropDownMenuItem}">
+
+                    </MenuItem>
+                    <MenuItem Header="Dialogue simulation console" Click="ShowDialogueSimulation" Height="25" Template="{DynamicResource SingleDropDownMenuItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Res/ViewTestConsole.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <ScrollViewer x:Name="MainScrollViewer" Grid.Row="1" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" PreviewMouseWheel="Zoom" PreviewMouseDown="MainScroller_MouseDown" PreviewMouseMove="scrollViewer_PreviewMouseMove" PreviewMouseUp="scrollViewer_PreviewMouseButtonUp">
+            <Canvas x:Name="MainCanvas" PreviewMouseMove="MainCanvas_PreviewMouseMove" 
+                PreviewMouseUp="MainCanvas_PreviewMouseUp"  Height="100000" Width="100000">
+                <Canvas.Background>
+                    <VisualBrush TileMode="Tile" Stretch="Uniform" Viewport="25,25,25,25" ViewportUnits="Absolute">
+                        <VisualBrush.Visual>
+                            <Rectangle Width="40" Height="40" Fill="#FF181818" Stroke="WhiteSmoke" StrokeThickness="0.1"/>
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Canvas.Background>
+                <Canvas.RenderTransform>
+                    <MatrixTransform></MatrixTransform>
+                </Canvas.RenderTransform>
+                <co:DialogueStarter x:Name="MainStarter" Canvas.Left="10010" Canvas.Top="10010"></co:DialogueStarter>
+            </Canvas>
+        </ScrollViewer>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <co:DialogueSimulationUI x:Name="DialogueSimulationUIElement" Visibility="Hidden"></co:DialogueSimulationUI>
+        </Grid>
+
+    </Grid>
+</Window>

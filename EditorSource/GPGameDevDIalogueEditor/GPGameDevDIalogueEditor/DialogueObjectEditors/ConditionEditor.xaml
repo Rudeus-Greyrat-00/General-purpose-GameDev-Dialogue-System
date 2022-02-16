@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="GPGameDevDialogueEditor.DialogueObjectEditors.ConditionEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GPGameDevDialogueEditor.DialogueObjectEditors"
+             xmlns:uc="clr-namespace:GPGameDevDialogueEditor.UICustomObjects"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="Condition" Width="60" Margin="1,1,1,1" Background="#66FF7474" GotKeyboardFocus="TextBox_GotKeyboardFocus" LostKeyboardFocus="TextBox_LostKeyboardFocus" Foreground="Gray" Text="Condition"></TextBox>
+            <TextBox x:Name="Argument" Width="103" Margin="1,1,1,1" Background="#66FF7474" GotKeyboardFocus="TextBox_GotKeyboardFocus" LostKeyboardFocus="TextBox_LostKeyboardFocus" Foreground="Gray" Text="Argument">  </TextBox>
+        </StackPanel>
+        <StackPanel Margin="1,0,1,0" Orientation="Horizontal">
+            <Label Margin="1,1,1,0" Width="100" Background="#3300FFFF">Action if true</Label>
+            <Button Margin="1,1,1,0" Click="AddTrueConditionAction">Add action</Button>
+            <Label Margin="0,1,0,0" Width="100"  Background="#33FF0000" Height="27">Next talk if true:</Label>
+            <uc:LineStarter x:Name="trueStarter" Margin="10,6,0,15" HorizontalAlignment="Left"></uc:LineStarter>
+        </StackPanel>
+        <StackPanel Margin="20,1,1,1" x:Name="ActionIfTrueStackPanel">
+            
+        </StackPanel>
+        <StackPanel Margin="1,0,1,0" Orientation="Horizontal">
+            <Label Margin="1,1,1,0" Width="100" Background="#3300FFFF">Action if false</Label>
+            <Button Margin="1,1,1,0" Click="AddFalseConditionAction">Add action</Button>
+            <Label Margin="0,1,0,0" Background="#33FF0000" Width="100">Next talk if false:</Label>
+            <uc:LineStarter x:Name="falseStarter" Margin="10,6,0,15" HorizontalAlignment="Left"></uc:LineStarter>
+        </StackPanel>
+        <StackPanel Margin="20,1,1,1" x:Name="ActionIfFalseStackPanel">
+            
+        </StackPanel>
+    </StackPanel>
+</UserControl>

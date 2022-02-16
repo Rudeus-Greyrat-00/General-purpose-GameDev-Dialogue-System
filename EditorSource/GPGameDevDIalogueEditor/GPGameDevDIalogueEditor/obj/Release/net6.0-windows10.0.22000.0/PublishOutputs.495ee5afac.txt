@@ -1,0 +1,10 @@
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueEditor.exe
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueEditor.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueEditor.deps.json
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueEditor.runtimeconfig.json
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueEditor.pdb
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\Microsoft.Windows.SDK.NET.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\WinRT.Runtime.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\Newtonsoft.Json.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueSystemLib.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueSystemLib.pdb
