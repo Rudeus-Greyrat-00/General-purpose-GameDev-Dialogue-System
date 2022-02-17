@@ -362,7 +362,7 @@ namespace GPGameDevDialogueEditor
                         }
                 }
             }
-
+            currentSavePath = null;
             if (MainCanvas.Children.Count > 1) MainCanvas.Children.RemoveRange(1, MainCanvas.Children.Count);
             if (MainCanvas.Children[0] != null && MainCanvas.Children[0] is UICustomObjects.DialogueStarter starter) starter.ClearData();
             HasUnsavedChange = false;
