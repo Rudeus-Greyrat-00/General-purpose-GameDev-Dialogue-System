@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj": {}
+    "C:\\Users\\ksamu\\source\\GPGDRepos\\EditorSource\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj": {
+    "C:\\Users\\ksamu\\source\\GPGDRepos\\EditorSource\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
+        "projectUniqueName": "C:\\Users\\ksamu\\source\\GPGDRepos\\EditorSource\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
         "projectName": "GPGameDevDialogueEditor",
-        "projectPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
+        "projectPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\EditorSource\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
         "packagesPath": "C:\\Users\\ksamu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\obj\\publish\\win-x64\\",
+        "outputPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\EditorSource\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0-windows10.0.22000": {
             "targetAlias": "net6.0-windows10.0.22000.0",
             "projectReferences": {
-              "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
-                "projectPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj"
+              "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
+                "projectPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj"
               }
             }
           }
@@ -47,6 +47,12 @@
       "frameworks": {
         "net6.0-windows10.0.22000": {
           "targetAlias": "net6.0-windows10.0.22000.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -95,87 +101,31 @@
         }
       }
     },
-    "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
+        "projectUniqueName": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
         "projectName": "GPGameDevDialogueSystemLib",
-        "projectPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
+        "projectPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
         "packagesPath": "C:\\Users\\ksamu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
+        "projectStyle": "PackagesConfig",
         "configFilePaths": [
           "C:\\Users\\ksamu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net48": {
             "projectReferences": {}
           }
         },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
+        "packagesConfigPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\packages.config"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[6.0.2, 6.0.2]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[6.0.2, 6.0.2]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[6.0.2, 6.0.2]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
-        }
+        "net48": {}
       }
     }
   }

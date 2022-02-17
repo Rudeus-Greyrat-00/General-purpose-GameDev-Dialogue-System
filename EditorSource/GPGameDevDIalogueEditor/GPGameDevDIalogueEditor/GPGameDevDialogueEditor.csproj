@@ -22,11 +22,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Libraries\GPGameDevDialogueSystem\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib.csproj" />
+    <Folder Include="Themes\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Themes\" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

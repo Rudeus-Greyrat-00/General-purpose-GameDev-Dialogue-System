@@ -10,6 +10,7 @@
       "GPGameDevDialogueEditor/1.0.0": {
         "dependencies": {
           "GPGameDevDialogueSystemLib": "1.0.0",
+          "Newtonsoft.Json": "13.0.1",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "6.0.2",
           "runtimepack.Microsoft.WindowsDesktop.App.Runtime.win-x64": "6.0.2",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.22000.22"
@@ -924,9 +925,6 @@
         }
       },
       "GPGameDevDialogueSystemLib/1.0.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
-        },
         "runtime": {
           "GPGameDevDialogueSystemLib.dll": {}
         }

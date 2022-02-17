@@ -53,9 +53,6 @@ C:\Users\ksamu\source\repos\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\
 C:\Users\ksamu\source\repos\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\Themes\LightTheme.g.cs
 C:\Users\ksamu\source\repos\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\App.baml
 C:\Users\ksamu\source\repos\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\refint\GPGameDevDialogueEditor.dll
-C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.dll
-C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\refint\GPGameDevDialogueEditor.dll
-C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.pdb
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\bin\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.exe
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\bin\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.deps.json
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\bin\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.runtimeconfig.json
@@ -106,5 +103,8 @@ C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDI
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.AssemblyInfo.cs
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.csproj.CoreCompileInputs.cache
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.csproj.CopyComplete
+C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.dll
+C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\refint\GPGameDevDialogueEditor.dll
+C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.pdb
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\GPGameDevDialogueEditor.genruntimeconfig.cache
 C:\Users\ksamu\source\GPGDRepos\EditorSource\GPGameDevDIalogueEditor\GPGameDevDIalogueEditor\obj\Debug\net6.0-windows10.0.22000.0\ref\GPGameDevDialogueEditor.dll

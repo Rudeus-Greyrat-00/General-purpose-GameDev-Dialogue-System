@@ -10,10 +10,6 @@
         <Line x:Name="Line" Stroke="GhostWhite"  StrokeThickness="3" MouseRightButtonDown="Line_MouseRightButtonDown">
 
         </Line>
-        <Line x:Name="InteractionLine" Stroke ="Transparent"  StrokeThickness="15" MouseRightButtonDown="Line_MouseRightButtonDown" X1="{Binding ElementName= Line, Path=X1}" X2="{Binding ElementName= Line, Path=X2}"
-              Y2="{Binding ElementName=Line, Path=Y2}" Y1="{Binding ElementName= Line, Path=Y1}">
-            
-        </Line>
     </Canvas>
 
 </UserControl>

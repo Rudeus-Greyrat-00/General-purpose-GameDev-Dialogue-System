@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
+        "projectName": "GPGameDevDialogueEditor",
+        "projectPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\GPGameDevDialogueEditor.csproj",
+        "packagesPath": "C:\\Users\\ksamu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDIalogueEditor\\GPGameDevDIalogueEditor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ksamu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows10.0.22000"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows10.0.22000": {
+            "targetAlias": "net6.0-windows10.0.22000.0",
+            "projectReferences": {
+              "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
+                "projectPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows10.0.22000": {
+          "targetAlias": "net6.0-windows10.0.22000.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.22000.22, 10.0.22000.22]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
+        "projectName": "GPGameDevDialogueSystemLib",
+        "projectPath": "C:\\Users\\ksamu\\source\\repos\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

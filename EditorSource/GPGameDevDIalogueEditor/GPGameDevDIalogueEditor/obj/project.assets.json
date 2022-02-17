@@ -13,10 +13,6 @@
       },
       "GPGameDevDialogueSystemLib/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
-        },
         "compile": {
           "bin/placeholder/GPGameDevDialogueSystemLib.dll": {}
         },
@@ -56,13 +52,14 @@
     },
     "GPGameDevDialogueSystemLib/1.0.0": {
       "type": "project",
-      "path": "../../../Libraries/GPGameDevDialogueSystem/GPGameDevDialogueSystemLib/GPGameDevDialogueSystemLib.csproj",
-      "msbuildProject": "../../../Libraries/GPGameDevDialogueSystem/GPGameDevDialogueSystemLib/GPGameDevDialogueSystemLib.csproj"
+      "path": "../../../Libraries/GPGameDevDialogueSystemLib/GPGameDevDialogueSystemLib/GPGameDevDialogueSystemLib.csproj",
+      "msbuildProject": "../../../Libraries/GPGameDevDialogueSystemLib/GPGameDevDialogueSystemLib/GPGameDevDialogueSystemLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows10.0.22000": [
-      "GPGameDevDialogueSystemLib >= 1.0.0"
+      "GPGameDevDialogueSystemLib >= 1.0.0",
+      "Newtonsoft.Json >= 13.0.1"
     ]
   },
   "packageFolders": {
@@ -97,8 +94,8 @@
         "net6.0-windows10.0.22000": {
           "targetAlias": "net6.0-windows10.0.22000.0",
           "projectReferences": {
-            "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
-              "projectPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystem\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj"
+            "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj": {
+              "projectPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj"
             }
           }
         }
@@ -112,6 +109,12 @@
     "frameworks": {
       "net6.0-windows10.0.22000": {
         "targetAlias": "net6.0-windows10.0.22000.0",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

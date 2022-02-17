@@ -215,7 +215,7 @@ namespace GPGameDevDialogueEditor
         private void SaveAs(object sender, RoutedEventArgs e)
         {
             SaveFileDialog dialog = new SaveFileDialog();
-            dialog.FileName = "Dialogue"; // Default file name
+            dialog.FileName = ""; // Default file name
             dialog.DefaultExt = ".EDP"; // Default file extension
             dialog.Filter = "Editor Dialogue Project (editor only) (.EDP)|*.EDP"; // Filter files by extension
 
