@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <UseWindowsForms>True</UseWindowsForms>
+    <ApplicationManifest>.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Res\ExportIcon.png" />
+    <None Remove="Res\NewIcon.png" />
+    <None Remove="Res\OpenIcon.png" />
+    <None Remove="Res\SaveAsIcon.png" />
+    <None Remove="Res\SaveIcon.png" />
+    <None Remove="Res\TalkIcon.png" />
+    <None Remove="Res\TestDialogueIcon.png" />
+    <None Remove="Res\ViewTestConsole.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Res\ExportIcon.png" />
+    <Resource Include="Res\NewIcon.png" />
+    <Resource Include="Res\OpenIcon.png" />
+    <Resource Include="Res\SaveAsIcon.png" />
+    <Resource Include="Res\SaveIcon.png" />
+    <Resource Include="Res\TalkIcon.png" />
+    <Resource Include="Res\TestDialogueIcon.png" />
+    <Resource Include="Res\ViewTestConsole.png" />
+  </ItemGroup>
+
+</Project>

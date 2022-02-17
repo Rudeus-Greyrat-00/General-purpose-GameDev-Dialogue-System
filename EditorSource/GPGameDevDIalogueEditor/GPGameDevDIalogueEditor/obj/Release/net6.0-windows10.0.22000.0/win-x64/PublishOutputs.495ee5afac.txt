@@ -1,0 +1,8 @@
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueEditor.pdb
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\D3DCompiler_47_cor3.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\PenImc_cor3.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\PresentationNative_cor3.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\vcruntime140_cor3.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\wpfgfx_cor3.dll
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueSystemLib.pdb
+C:\Users\ksamu\OneDrive\Desktop\Nuova cartella\GPGameDevDialogueEditor.exe
