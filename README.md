@@ -19,7 +19,7 @@ Index:
    3.4 - Best practices
 
 ## 1: What is GPGD Dialogue System
-GPGD Dialogue System is a project composed of two sub-project, a library (wich I will refer to as "library") wich can create and manage NPC dialogues in games at runtime, and an editor wich can be used to create json dialogue files wich can be converted by the library into a Dialogue class object at runtime in your game with one simple function.
+GPGD Dialogue System is a project composed of two sub-project, a library (wich I will refer to as "library") wich can create and manage NPC dialogues in games at runtime, and an editor wich can be used to create dialogue files wich can be converted by the library into a Dialogue class object at runtime in your game with one simple function.
 The dialogue class provide some useful function to navigate easily into the dialogue as you will see into the section 3.1 and 3.2 of the index. 
 
 The editor is a completely stand-alone project, it actually uses the library to export the json file and for some feature (for example it contains a section where you can simulate the behavior of the dialogue that you are making) but you don't need to link the editor project to your game in any ways at all.
