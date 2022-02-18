@@ -3,7 +3,7 @@
 # General Purpose Game Development Dialogue System (AKA GPGD Dialogue System)
 General purpose C# libraries (and editor) to create dialogues to be used in games in any C# based game engine
 
-[Download last editor relase](https://github.com/VulcanRedEngineer1701/General-purpose-GameDev-Dialogue-System/releases/tag/v1.0)
+[Download last editor relase](https://github.com/VulcanRedEngineer1701/General-purpose-GameDev-Dialogue-System/releases/tag/v0.0.1)
 
 Index:
 1. What is GPGD Dialogue System
