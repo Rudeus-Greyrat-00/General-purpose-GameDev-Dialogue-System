@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace DialogueSystem
@@ -34,7 +33,7 @@ namespace DialogueSystem
 
         public override void Execute(Dialogue parent, ref string currentTalkText)
         {
-            if (string.IsNullOrEmpty(runtimeVariablesName) || string.IsNullOrWhiteSpace(runtimeVariablesName) || LookForRuntimeVariable(parent) == null) 
+            if (string.IsNullOrEmpty(runtimeVariablesName) || string.IsNullOrWhiteSpace(runtimeVariablesName)|| LookForRuntimeVariable(parent) == null) 
                 throw new Exception($"Runtime variables key: {runtimeVariablesName} not found in current dialogue runtime variables in DialogueInterface or the modifier field runtimeVariableName is null/empty/white space");
             if (runtimeVariablesName != null)
             {

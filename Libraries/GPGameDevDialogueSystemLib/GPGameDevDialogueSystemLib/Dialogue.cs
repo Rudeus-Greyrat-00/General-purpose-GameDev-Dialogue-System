@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace DialogueSystem
@@ -18,24 +17,24 @@ namespace DialogueSystem
         {
             this.FirstTalk = FirstTalk;
         }
-        [JsonProperty]
+
         public string Name = "-";
-        [JsonProperty]
+
         public string Language { get; internal set; } = "-";
-        [JsonIgnore]
+
         public List<Condition> dialogueConditions { get { return GetCondition(FirstTalk, true); } }
-        [JsonProperty]
+
         public List<RuntimeVariable> runtimeVariables = new List<RuntimeVariable>();
 
-        [JsonProperty]
+
         public Talk FirstTalk { get; internal set; } 
-        [JsonIgnore]
+
         internal bool endReached = false;
-        [JsonIgnore]
+
         public bool EndReached { get { return endReached; } }
-        [JsonIgnore]
+
         internal Talk currentTalk = null;
-        [JsonIgnore]
+
         public Talk CurrentTalk
         {
             get
@@ -44,7 +43,7 @@ namespace DialogueSystem
                 if (currentTalk != null && currentTalk.hasAppliedInternalModifiers == false) currentTalk.ApplyInternalModifier(this); return currentTalk;
             }
         }
-        [JsonIgnore]
+
         private List<Talk> cleared = new List<Talk>();
 
         private List<Condition> GetCondition(Talk talk, bool firstCall = true)
@@ -180,30 +179,30 @@ namespace DialogueSystem
                 hasAppliedInternalModifiers = true;
             }
         }
-        [JsonProperty]
+
         public string text = "-";
-        [JsonProperty]
+
         public string tag { get; private set; } = "-";
-        [JsonProperty]
+
         public string characterName = null;
-        [JsonProperty]
+
         public List<Answer> answers = new List<Answer>();
-        [JsonProperty]
+
         public List<Modifier> modifiers = new List<Modifier>();
-        [JsonProperty]
+
         public List<DialogueAction> unconditionalActions = new List<DialogueAction>();
-        [JsonProperty]
+
         public Condition TalkCondition { get; set; }
-        [JsonIgnore]
+
         public bool HasCondition { get { return TalkCondition != null; } }
-        [JsonIgnore]
+
         internal bool hasAppliedInternalModifiers = false;
-        [JsonIgnore]
+
         public bool HasAnswers { get { return answers.Count > 0; } }
-        [JsonProperty]
+
         public Talk UnconditionalNext { get; set; }
 
-        [JsonIgnore]
+
         public List<InternalAction> UnconditionalInternalActions
         {
             get
@@ -213,7 +212,7 @@ namespace DialogueSystem
                 return toReturn;
             }
         }
-        [JsonIgnore]
+
         public List<DialogueAction> UnconditionalExternalAction
         {
             get
@@ -223,7 +222,7 @@ namespace DialogueSystem
                 return toReturn;
             }
         }
-        [JsonIgnore]
+
         public List<InternalModifier> InternalModifier
         {
             get
@@ -233,7 +232,7 @@ namespace DialogueSystem
                 return toReturn;
             }
         }
-        [JsonIgnore]
+
         public List<Modifier> ExternalModifier
         {
             get
@@ -261,18 +260,17 @@ namespace DialogueSystem
         {
             foreach (DialogueAction action in inputActions) actions.Add(action);
         }
-        [JsonProperty]
+
         public string text = "-";
-        [JsonProperty]
+
         public List<DialogueAction> actions = new List<DialogueAction>();
-        [JsonProperty]
+
         public Condition AnswerCondition { get; set; }
-        [JsonIgnore]
+
         public bool HasCondition { get { return AnswerCondition != null; } }
-        [JsonProperty]
+
         public Talk UnconditionalNext;
 
-        [JsonIgnore]
         public List<InternalAction> InternalActions
         {
             get
@@ -282,7 +280,7 @@ namespace DialogueSystem
                 return toReturn;
             }
         }
-        [JsonIgnore]
+
         public List<DialogueAction> ExternalAction
         {
             get
@@ -308,7 +306,6 @@ namespace DialogueSystem
     public abstract class Modifier
     {
         public Modifier() { }
-        [JsonProperty]
         public int position; //index of the modifier in the text, for example in "How are you? <Stop for 1 second> Im fine" index would be 13 because the modifier has it's effect when the text arrive at 13
     }
 
@@ -337,20 +334,20 @@ namespace DialogueSystem
             this.TalkIfTrue = talkIfTrue;
         }
 
-        [JsonProperty]
+
         public string name = "-";
-        [JsonProperty]
+
         public string argument = "-";
 
         public bool? outcome = null;
 
-        [JsonProperty]
+
         public List<DialogueAction> actionsIfTrue = new List<DialogueAction>();
-        [JsonProperty]
+
         public List<DialogueAction> actionsIfFalse = new List<DialogueAction>();
-        [JsonProperty]
+
         internal Talk TalkIfTrue { get; set; }
-        [JsonProperty]
+
         internal Talk TalkIfFalse { get; set; }
 
         public Talk GetNextTalk()
@@ -398,9 +395,9 @@ namespace DialogueSystem
             this.Name = Name;
             this.Value = Value;
         }
-        [JsonProperty]
+
         public string Name { get; internal set; }
-        [JsonProperty]
+
         public string Value { get; set; }
     }
 }

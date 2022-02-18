@@ -3,82 +3,30 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace DialogueSystem
 {
     public static class DialogueManager
-    { 
-        /*
-        public static Dialogue? JSONParse(string value)
+    {
+        private static char StartObjectChar = '«';
+        private static char EndObjectChar = '»';
+
+        public static Dialogue GetDialogueFromString(string fileText)
         {
-            if (JsonConvert.DeserializeObject<Dialogue>(value) != null) return JsonConvert.DeserializeObject<Dialogue>(value);
-            else throw new Exception("JSONParse returned null");
+            throw new NotImplementedException();    
         }
-        */
 
-        
-        public static Dialogue JSONParse(string value)
+        public static string GetStringFromDialogue(Dialogue dialogueToConvert)
         {
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Formatting = Formatting.Indented;
-            serializer.PreserveReferencesHandling = PreserveReferencesHandling.All;
-            serializer.TypeNameHandling = TypeNameHandling.All;
-
-            TextReader reader = new StringReader(value);
-            JsonReader JSONreader = new JsonTextReader(reader);
-
-            Dialogue dialogue = (Dialogue)serializer.Deserialize(JSONreader);
-            if (dialogue != null) return dialogue;
-            else throw new Exception("JSON deserializer returned null");
+            throw new NotImplementedException();
         }
-        
+
     }
 
     public static class DialogueUtilities
     {
-        public static string ConvertToJSONString(Dialogue dialogue)
-        {
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Formatting = Formatting.Indented;
-            serializer.PreserveReferencesHandling = PreserveReferencesHandling.All;
-            serializer.TypeNameHandling = TypeNameHandling.All;
 
-            TextWriter textWriter = new StringWriter();
-            JsonWriter jsonWriter = new JsonTextWriter(textWriter);
 
-            serializer.Serialize(jsonWriter, dialogue);
-
-            return textWriter.ToString();
-        }
-        public static void ConvertToJSON(Dialogue dialogue, string destinationPath, string fileName)
-        {
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Formatting = Formatting.Indented;
-            serializer.PreserveReferencesHandling = PreserveReferencesHandling.All;
-            serializer.TypeNameHandling = TypeNameHandling.All;
-
-            using (StreamWriter sw = new StreamWriter($"{destinationPath}\\{fileName}.json"))
-            using (JsonWriter writer = new JsonTextWriter(sw))
-            {
-                serializer.Serialize(writer, dialogue);
-            }
-        }
-
-        public static void ConvertToEDP(Dialogue dialogue, string destinationFileName)
-        {
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Formatting = Formatting.Indented;
-            serializer.PreserveReferencesHandling = PreserveReferencesHandling.All;
-            serializer.TypeNameHandling = TypeNameHandling.All;
-
-            using (StreamWriter sw = new StreamWriter($"{destinationFileName}"))
-            using (JsonWriter writer = new JsonTextWriter(sw))
-            {
-                serializer.Serialize(writer, dialogue);
-            }
-        }
     }
 
     public static class DialogueDebug
