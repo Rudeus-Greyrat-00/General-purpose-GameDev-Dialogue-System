@@ -90,13 +90,13 @@
         "projectName": "GPGameDevDialogueSystemLib",
         "projectPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib.csproj",
         "frameworks": {
-          "net48": {
+          "net472": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net48": {}
+        "net472": {}
       }
     }
   }
