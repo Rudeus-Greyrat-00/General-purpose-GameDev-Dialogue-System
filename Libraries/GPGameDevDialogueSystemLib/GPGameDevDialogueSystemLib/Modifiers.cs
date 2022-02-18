@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Newtonsoft.Json;
 
 namespace DialogueSystem
 {
@@ -15,7 +14,6 @@ namespace DialogueSystem
             position = index;
             this.value = value;
         }
-        [JsonProperty]
         public float value;
     }
 
@@ -28,7 +26,6 @@ namespace DialogueSystem
             this.position = index;
             this.runtimeVariablesName = runtimeVariablesName;
         }
-        [JsonProperty]
         public string runtimeVariablesName = "";
 
         public override void Execute(Dialogue parent, ref string currentTalkText)
@@ -59,7 +56,6 @@ namespace DialogueSystem
             this.position = index;
             this.value = value;
         }
-        [JsonProperty]
         public string value = "";
 
         public override void Execute(Dialogue parent, ref string currentTalkText)
