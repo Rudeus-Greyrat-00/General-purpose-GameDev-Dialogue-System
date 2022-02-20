@@ -8,7 +8,7 @@ General purpose C# libraries (and editor) to create dialogues to be used in game
 Index:
 1. What is GPGD Dialogue System
 2. How to include the libraries in your games
-3. How to use in your games
+3. How to use it in your games
    
    3.1 - Dialogue structure and components meaning
   
@@ -22,7 +22,7 @@ Index:
 GPGD Dialogue System is a project composed of two sub-project, a library (wich I will refer to as "library" or "the library" or "the libraries") wich can create and manage NPC dialogues in games at runtime, and an editor wich can be used to create dialogue json files wich can be converted by the library into a Dialogue class object at runtime in your game with one simple function.
 The dialogue class provide some useful function to navigate easily into the dialogue as you will see into sections 3.1 and 3.2. 
 
-The editor is a completely stand-alone project, it actually uses the library to export the dialogue json file and for some feature (for example it contains a section where you can simulate the behavior of the dialogue that you are making) but you don't need to link the editor project to your game in any ways at all.
+The editor is a completely stand-alone project, it actually uses the library to export the dialogue json file and for some feature (for example it contains a section where you can simulate the behavior of the dialogue that you are writing) but you don't need to link the editor project to your game in any ways at all.
 
  ## 2: How to include the libaries on your game
  (please note that I tried to describe that in a way that even begineer in game development or in programming (like me) can understand)
@@ -43,4 +43,5 @@ Open the library folder > GPGameDevDialogueSystemLib >  GPGameDevDialogueSystemL
  -3 Under Solition [name of your solution] you should now see two projects. Under [your project] left click on 'Dependencies' > Add Project Reference, tick 'GPGameDevDialogueSystemLib'. You are done!
 _____________________________________________________________________________________________________________________________________
 Of course in both cases to create/use object of class Dialogue you need a using directive, so in any .cs file when you want to use the dialogue system add "using DialogueSystem"
+## 3: How to use it in your games
       
