@@ -242,10 +242,6 @@ namespace GPGameDevDialogueEditor
 
         private void Export(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
-
-
-
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.FileName = "Exported_Dialogue"; // Default file name
             dialog.DefaultExt = ".json"; // Default file extension
@@ -263,7 +259,7 @@ namespace GPGameDevDialogueEditor
             exportedDialogue.runtimeVariables = MainStarter.ExportRV();
 
 
-            //string exportedDialogueToString = DialogueSystem.DialogueUtilities.ConvertToJSONString(exportedDialogue); -------> TODO (without Newtonsoft.Json libraries)
+            string exportedDialogueToString = DialogueSystem.DialogueUtilities.ConvertToJSONString(exportedDialogue);
 
             // Process save file dialog box results
             if (result == true)
@@ -273,7 +269,7 @@ namespace GPGameDevDialogueEditor
 
 
 
-                //File.WriteAllText(filename, exportedDialogueToString);  //TO DECOMMENT
+                File.WriteAllText(filename, exportedDialogueToString); 
 
 
             }
