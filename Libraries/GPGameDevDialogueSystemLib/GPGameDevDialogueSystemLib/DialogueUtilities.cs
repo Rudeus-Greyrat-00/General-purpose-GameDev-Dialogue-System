@@ -5,10 +5,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-
+using Newtonsoft.Json.Serialization;
 
 namespace DialogueSystem
 {
+    internal sealed class DotNetCompatibleSerializationBinder : DefaultSerializationBinder
+    {
+        private const string CoreLibAssembly = "System.Private.CoreLib";
+        private const string MscorlibAssembly = "mscorlib";
+
+        public override Type BindToType(string assemblyName, string typeName)
+        {
+            if (assemblyName == CoreLibAssembly)
+            {
+                assemblyName = MscorlibAssembly;
+                typeName = typeName.Replace(CoreLibAssembly, MscorlibAssembly);
+            }
+
+            return base.BindToType(assemblyName, typeName);
+        }
+    }
+
     public static class DialogueManager
     { 
         /*
@@ -35,6 +52,29 @@ namespace DialogueSystem
             else throw new Exception("JSON deserializer returned null");
         }
         
+        public static Dialogue JSONParseNetFr4x(string value)
+        {
+            JsonSerializer serializer = new JsonSerializer();
+            serializer.Formatting = Formatting.Indented;
+            serializer.PreserveReferencesHandling = PreserveReferencesHandling.All;
+            serializer.TypeNameHandling = TypeNameHandling.All;
+
+
+            var settings = new JsonSerializerSettings()
+            {
+                SerializationBinder = new DotNetCompatibleSerializationBinder()
+            };
+
+            serializer.SerializationBinder = new DotNetCompatibleSerializationBinder();
+
+            TextReader reader = new StringReader(value);
+            JsonReader JSONreader = new JsonTextReader(reader);
+
+            Dialogue dialogue = (Dialogue)serializer.Deserialize(JSONreader);
+            if (dialogue != null) return dialogue;
+            else throw new Exception("JSON deserializer returned null");
+        }
+
     }
 
     public static class DialogueUtilities
@@ -61,20 +101,6 @@ namespace DialogueSystem
             serializer.TypeNameHandling = TypeNameHandling.All;
 
             using (StreamWriter sw = new StreamWriter($"{destinationPath}\\{fileName}.json"))
-            using (JsonWriter writer = new JsonTextWriter(sw))
-            {
-                serializer.Serialize(writer, dialogue);
-            }
-        }
-
-        public static void ConvertToEDP(Dialogue dialogue, string destinationFileName)
-        {
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Formatting = Formatting.Indented;
-            serializer.PreserveReferencesHandling = PreserveReferencesHandling.All;
-            serializer.TypeNameHandling = TypeNameHandling.All;
-
-            using (StreamWriter sw = new StreamWriter($"{destinationFileName}"))
             using (JsonWriter writer = new JsonTextWriter(sw))
             {
                 serializer.Serialize(writer, dialogue);

@@ -70,7 +70,8 @@ namespace GPGameDevDialogueEditor.DialogueObjectEditors {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;component/dialogueobjecteditors/actioneditor.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;V1.0.0.0;component/dialogueobjecteditors/actioneditor.xa" +
+                    "ml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\DialogueObjectEditors\ActionEditor.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

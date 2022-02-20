@@ -70,7 +70,8 @@ namespace GPGameDevDialogueEditor.UICustomObjects {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;component/uicustomobjects/dialoguesimulationui.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;V1.0.0.0;component/uicustomobjects/dialoguesimulationui." +
+                    "xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UICustomObjects\DialogueSimulationUI.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

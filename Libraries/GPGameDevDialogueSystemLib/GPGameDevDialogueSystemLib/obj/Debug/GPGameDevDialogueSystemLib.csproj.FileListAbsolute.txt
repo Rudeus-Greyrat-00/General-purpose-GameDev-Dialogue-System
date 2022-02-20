@@ -7,3 +7,12 @@ C:\Users\ksamu\source\repos\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLi
 C:\Users\ksamu\source\repos\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.csproj.CopyComplete
 C:\Users\ksamu\source\repos\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.dll
 C:\Users\ksamu\source\repos\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.pdb
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\bin\Debug\GPGameDevDialogueSystemLib.dll
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\bin\Debug\GPGameDevDialogueSystemLib.pdb
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.csproj.AssemblyReference.cache
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.csproj.CoreCompileInputs.cache
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.csproj.CopyComplete
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.dll
+C:\Users\ksamu\source\GPGDRepos\Libraries\GPGameDevDialogueSystemLib\GPGameDevDialogueSystemLib\obj\Debug\GPGameDevDialogueSystemLib.pdb

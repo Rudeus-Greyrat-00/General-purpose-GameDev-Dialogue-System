@@ -95,7 +95,7 @@ namespace GPGameDevDialogueEditor.UICustomObjects {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;component/uicustomobjects/dialoguestarter.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GPGameDevDialogueEditor;V1.0.0.0;component/uicustomobjects/dialoguestarter.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UICustomObjects\DialogueStarter.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

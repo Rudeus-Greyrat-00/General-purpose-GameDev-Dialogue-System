@@ -118,14 +118,14 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net48": {
+          "net47": {
             "projectReferences": {}
           }
         },
         "packagesConfigPath": "C:\\Users\\ksamu\\source\\GPGDRepos\\Libraries\\GPGameDevDialogueSystemLib\\GPGameDevDialogueSystemLib\\packages.config"
       },
       "frameworks": {
-        "net48": {}
+        "net47": {}
       }
     }
   }
