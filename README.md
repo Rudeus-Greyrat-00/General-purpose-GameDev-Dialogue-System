@@ -26,20 +26,21 @@ The editor is a completely stand-alone project, it actually uses the library to 
 
  ## 2: How to include the libaries on your game
  (please note that I tried to describe that in a way that even begineer in game development or in programming (like me) can understand)
- #### Download all the code as a zip file, then extract it. Inside you should see 2 folders, 'EditorSource' and 'Libraries'.
+ #### First: Download all the code as a zip file, then extract it. Inside you should see 2 folders, 'EditorSource' and 'Libraries'.
+ 
+ _____________________________________________________________________________________________________________________________________
  
  #### Unity: 
 Open the library folder > GPGameDevDialogueSystemLib >  GPGameDevDialogueSystemLib > bin > relase > GPGameDevDialogueSystemLib.dll. Simply drag that .dll file into the Unity editor, into the "Assets" area. You did it!
- 
+ _____________________________________________________________________________________________________________________________________
  #### Godot (it also applies to pretty much any C# project, even the ones without engines, it doesn't work for Unity): 
- 
- 0 - Copy the 'Libraries' folder and put it in a 'stable' place, when you won't move or touch unintentionally (for example: desktop = bad place, Somewhere inside your game project folder = good place)
+ 0 - Copy the 'Libraries' folder and put it in a 'stable' place, when you won't move or touch unintentionally (for example: desktop = bad place, somewhere inside your game project folder = good place)
  
  -1 Open the .sln file of your project with visual studio (I used Visual Studio 2022), if you are using godot, it should be inside the project folder.
  
- -2 Go to the 'Solution Explorer' on the right of the screen (if you use the default Visual Studio layout), left click on 'Solution [name of your solution]' > Add > Existing Project then navigate to the .csprj file inside the 'Libraries' folder, it is inside Libraries > GPGameDevDialogueSystemLib > GPGameDevDialogueSystemLib (it should have a green 'C#' icon) and add it. You are almost done.
+ -2 Go to the 'Solution Explorer' on the right of the screen (if you use the default Visual Studio layout), left click on 'Solution [name of your solution]' > Add > Existing Project then navigate to the .csproj file inside the 'Libraries' folder (it is inside Libraries > GPGameDevDialogueSystemLib > GPGameDevDialogueSystemLib and it should have a green 'C#' icon) and add it. You are almost done.
  
- - 3 Under Solition [name of your solution] you should now see two project. Under [your project] left click on 'Dependencies' > Add Project Reference, tick 'GPGameDevDialogueSystemLib'. You are done!
-
+ -3 Under Solition [name of your solution] you should now see two projects. Under [your project] left click on 'Dependencies' > Add Project Reference, tick 'GPGameDevDialogueSystemLib'. You are done!
+_____________________________________________________________________________________________________________________________________
 Of course in both cases to create/use object of class Dialogue you need a using directive, so in any .cs file when you want to use the dialogue system add "using DialogueSystem"
       
