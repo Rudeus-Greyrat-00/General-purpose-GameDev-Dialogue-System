@@ -72,5 +72,23 @@ Next you have the main talk text. Here you can write what you want to appear in 
 
 Clicking on "Add Answer" an answer will appear. You can add unlimited amount of answers. As you can see each answer contains a link to another talk. They are all optional.
 
+_________________________________________________________________________________________________________________________
+
 There are a couple of things that I have not explained yet. These are "Action", "Conditions", "Runtime Variables" and "Modifiers". I'm going to briefely explain what they represent, i will explain how to use all this stuff in the next section.
+
+"Action" are object of class GenericEngineHandledAction (Inherit from DialogueAction class). They have two fields, "name" and "value". They are information containers, i will explain better how to use they in the next section.
+
+Now to explain "Condition" let's say that i want to create a dialogue where if a condition in game is verified a character says something, else it says something different.
+
+![image](https://user-images.githubusercontent.com/96582680/154970026-bff481f6-831f-48d6-b941-3e3fb306fc0c.png)
+
+Let's focus on an empty condition:
+
+![image](https://user-images.githubusercontent.com/96582680/154970444-80f8b4e1-1af7-465b-806d-9f00e47d8243.png)
+
+As you can see, a "Condition" can contains a Name, an Argument, actions that are performed if the outcome is true, and actions that are performed if the outcome is false. And of course, it contains links to a path to follow if the outcome is true, or if it false. In a Dialogue class object, the property "dialogueConditions" returns all the conditions fetching them from all the talks of the dialogue.
+
+_________________________________________________________________________________________________________________________
+
+And finally, let's say that you want to edit some part of a talk text a runtime in your game. For example, let's say that in your game the player has an inventory and can equip hats. Let's assume that evety hat has a different name. You want that an NPC says something like "Oh, i see that you have a very nice" and then the name of the hat, for example "Oh, i see that you have a very nice mexican hat". All the fields and property of Talk class are public so you can edit the text how you want, but actually there is a simpler way to do it, for example this can be done using "Runtime Variables" and "Modifiers". Object of class "Runtime Variables" contains a "name" and a "value". In the editor you can chose only the name, because the value is supposed to be filled at runtime by your game. How it depends by your implementation, i will suggest some ways in the next section 
 
