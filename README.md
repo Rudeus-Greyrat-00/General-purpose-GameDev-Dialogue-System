@@ -57,7 +57,7 @@ I think looking at the editor it is a great way to understand how an object of D
 
 ![Image 1](https://user-images.githubusercontent.com/96582680/154964295-db75e4ab-428b-4300-a70a-9d497f548fa7.png)
 
-So there is a lot to cover. What you are looking at is a simple dialogue where an NPC says "Today is a beautiful day" then ask to the player "Isn't it?" The player can choose between "Yes, it is a beauiful day" or "No it is a bad day" and then the Dialogue ends with the NPC sayng "I'm glad that you agree with me" or "Nooo why do you whink it is a bad day?" depending of wich answer the player choosed.
+So there is a lot to cover. What you are looking at is a simple dialogue where an NPC says "Today is a beautiful day" then asks to the player "Isn't it?" The player can choose between "Yes, it is a beauiful day" or "No it is a bad day" and then the Dialogue ends with the NPC saying "I'm glad that you agree with me" or "Nooo why do you whink it is a bad day?" depending of wich answer the player choosed.
 
 Let's start from the ground up.
 This:
