@@ -78,7 +78,7 @@ There are a couple of things that I have not explained yet. These are "Action", 
 
 "Action" are object of class GenericEngineHandledAction (Inherit from DialogueAction class). They have two fields, "name" and "value". They are information containers, i will explain better how to use they in the next section.
 
-Now to explain "Condition" let's say that i want to create a dialogue where if a condition in game is verified a character says something, else it says something different.
+Now to explain "Condition" let's say that I want to create a dialogue where if a condition in game is verified a character says something, else it says something different. It could be done this way:
 
 ![image](https://user-images.githubusercontent.com/96582680/154970026-bff481f6-831f-48d6-b941-3e3fb306fc0c.png)
 
