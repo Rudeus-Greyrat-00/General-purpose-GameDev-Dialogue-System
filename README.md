@@ -110,3 +110,16 @@ Now you should have a basic grasp about what is a Dialogue, a Talk, a Condition,
 
 ### 3.2: How to use GPGD Dialogue System in your games
 
+Ok, let's say that you just created a dialogue in the editor (an editor overview / tutorial is in the next section) and you want to use it in your game. 
+First of all you need to export it. Press Ctrl + E or go un File > Export. Put the file somewhere inside your game project folder. 
+
+Now, to get a Dialogue class object from that file you need first of all to get the content of that file and put in in a string. You can do this in many ways, it depents on your engine (if it has some features for interacting with game files) and you have to know how to do that, but it is a pretty easy task. Then you can convert that string into a dialogue object calling DialogueManager.JSONParse(yourstring) if you are working in a NON NetFramework4.x environment, otherwise you call DialogueManager.JSONParseNetFr4x(yourstring). If you don't know wich one use, in Unity and Godot you have to use DialogueManager.JSONParseNetFr4x. In general, if JSONParse/JOSNParseNetFr4x return an error, try switching the function. An example could be the following
+
+string dialStr = File.ReadAllText(filePath);
+
+Dialogue dial = JSONParseNetFr4x(dialStr);
+
+Now you got your dialogue!
+
+
+
