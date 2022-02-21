@@ -121,5 +121,13 @@ Dialogue dial = JSONParseNetFr4x(dialStr);
 
 Now you got your dialogue!
 
+______________________________________________________________________________________________________________________
+
+Now, every time you get a dialogue the first thing to do is to fill the outcomes of all the conditions, and fill all the values of all the runtime variables. This really depends of your implementation. How to do it it really depends on you, a possible way could be the following:
+
+![image](https://user-images.githubusercontent.com/96582680/155018140-d5a2e906-4cc2-4762-ba81-aa00cdca15ea.png)
+
+And in that switch you can add every condition you want, every time you need to add a new kind of condition, you just add in the switch. You can do a pretty similar thing with the RuntimeVariables as you can see in the following:
+
 
 
