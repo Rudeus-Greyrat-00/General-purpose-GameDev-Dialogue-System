@@ -48,4 +48,29 @@ ________________________________________________________________________________
 
 Of course in both cases to create/use object of class Dialogue you need a using directive, so in any .cs file when you want to use the dialogue system add "using DialogueSystem"
 ## 3: How to use it in your games
-      
+
+### 3.1: Dialogue structure and component meaning
+
+Before starting to explain how a Dialogue class object is composed and how it should be easily used, i have to explain the meanings of all of the classes that you will work with when using GPGD Dialogue System.
+
+I think looking at the editor it is a great way to understand how an object of Dialogue class work and how it should be used, so here there is a screenshot from the editor.
+
+![Image 1](https://user-images.githubusercontent.com/96582680/154964295-db75e4ab-428b-4300-a70a-9d497f548fa7.png)
+
+So there is a lot to cover. What you are looking at is a simple dialogue where an NPC says "Today is a beautiful day" then ask to the player "Isn't it?" The player can choose between "Yes, it is a beauiful day" or "No it is a bad day" and then the Dialogue ends with the NPC sayng "I'm glad that you agree with me" or "Nooo why do you whink it is a bad day?" depending of wich answer the player choosed.
+
+Let's start from the ground up.
+This:
+
+![image](https://user-images.githubusercontent.com/96582680/154965037-ef12d4aa-3381-46fb-a4c1-818acc52eb05.png)
+
+Is called a "Talk". It represent basically what happen in a single text bubble inside your game. A Dialogue class object contains a "FirstTalk" (in the example, it would be the one called "First Statement"). Every talk could contain a link to another talk. A Talk has a "Name" or a "Tag", it is a string that can contains the name of the talk or basically whatever you want, it is just an utility string. If you don't fill it, it will be empty space. Different talks can have the same Tag.
+
+Next you have a space where you can specify a "Character Name", even this is optional (for example if you want to create a dialogue like reading a sign). Basically everything is optional. If you want, you can even export a dialogue with all empty talks.
+
+Next you have the main talk text. Here you can write what you want to appear in the text bubble in your game. It could be what is written on a sign, or what an NPC says.
+
+Clicking on "Add Answer" an answer will appear. You can add unlimited amount of answers. As you can see each answer contains a link to another talk. They are all optional.
+
+There are a couple of things that I have not explained yet. These are "Action", "Conditions", "Runtime Variables" and "Modifiers". I'm going to briefely explain what they represent, i will explain how to use all this stuff in the next section.
+
