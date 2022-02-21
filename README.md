@@ -12,7 +12,7 @@ Index:
    
    3.1 - Dialogue structure and components meaning
   
-   3.2 - How to use in your games
+   3.2 - How to use it in your games
    
    3.3 - Editor overview
    
@@ -103,4 +103,8 @@ In addition to a Runtime Variables, you need a "Load Runtime Variable Modifier" 
 When you instance a new dialogue class object readed from a dialogue file you need to fill all the runtime variables and all the conditions. Then the value that you assigned to the "CurrentHat" Runtime Variable object will be automatically placed inside the Talk text. I will explain this better in the next section. If you are afraid to made mistakes check the small rectangle in the upper-right corner of the Talk text textbox, if it is green, all your modifier will work. If it is red like in the following example, hover with the mouse over the rectangle to get information about what is wrong. In this example, i will write the name of the runtime variable wrong:
 
 ![image](https://user-images.githubusercontent.com/96582680/154975501-0ac0fd1f-5fba-4acb-9d79-39581e450f2e.png)
+
+Now you should have a basic grasp about what is a Dialogue, a Talk, a Condition, a RuntimeVariable, an Action and a Modifier
+
+### 3.2: How to use GPGD Dialogue System in your games
 
