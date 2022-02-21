@@ -31,9 +31,12 @@ The editor is a completely stand-alone project, it actually uses the library to 
  _____________________________________________________________________________________________________________________________________
  
  #### Unity: 
+ 
 Open the library folder > GPGameDevDialogueSystemLib >  GPGameDevDialogueSystemLib > bin > relase > GPGameDevDialogueSystemLib.dll. Simply drag that .dll file into the Unity editor, into the "Assets" area. You did it!
  _____________________________________________________________________________________________________________________________________
+ 
  #### Godot (it also applies to pretty much any C# project, even the ones without engines, it doesn't work for Unity): 
+ 
  0 - Copy the 'Libraries' folder and put it in a 'stable' place, when you won't move or touch unintentionally (for example: desktop = bad place, somewhere inside your game project folder = good place)
  
  -1 Open the .sln file of your project with visual studio (I used Visual Studio 2022), if you are using godot, it should be inside the project folder.
@@ -42,6 +45,7 @@ Open the library folder > GPGameDevDialogueSystemLib >  GPGameDevDialogueSystemL
  
  -3 Under Solition [name of your solution] you should now see two projects. Under [your project] left click on 'Dependencies' > Add Project Reference, tick 'GPGameDevDialogueSystemLib'. You are done!
 _____________________________________________________________________________________________________________________________________
+
 Of course in both cases to create/use object of class Dialogue you need a using directive, so in any .cs file when you want to use the dialogue system add "using DialogueSystem"
 ## 3: How to use it in your games
       
