@@ -51,7 +51,7 @@ Of course in both cases to create/use object of class Dialogue you need a using 
 
 ### 3.1: Dialogue structure and component meaning
 
-Before starting to explain how a Dialogue class object is composed and how it should be easily used, i have to explain the meanings of all of the classes that you will work with when using GPGD Dialogue System.
+Before starting to explain how a Dialogue class object is composed and how it should be easily used, i have to explain the meanings of all of the classes you will work with when using GPGD Dialogue System.
 
 I think looking at the editor it is a great way to understand how an object of Dialogue class work and how it should be used, so here there is a screenshot from the editor.
 
