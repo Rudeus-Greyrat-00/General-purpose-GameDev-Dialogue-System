@@ -90,5 +90,17 @@ As you can see, a "Condition" can contains a Name, an Argument, actions that are
 
 _________________________________________________________________________________________________________________________
 
-And finally, let's say that you want to edit some part of a talk text a runtime in your game. For example, let's say that in your game the player has an inventory and can equip hats. Let's assume that evety hat has a different name. You want that an NPC says something like "Oh, i see that you have a very nice" and then the name of the hat, for example "Oh, i see that you have a very nice mexican hat". All the fields and property of Talk class are public so you can edit the text how you want, but actually there is a simpler way to do it, for example this can be done using "Runtime Variables" and "Modifiers". Object of class "Runtime Variables" contains a "name" and a "value". In the editor you can chose only the name, because the value is supposed to be filled at runtime by your game. How it depends by your implementation, i will suggest some ways in the next section 
+And finally, let's say that you want to edit some part of a talk text a runtime in your game. For example, let's say that in your game the player has an inventory and can equip hats. Let's assume that evety hat has a different name. You want that an NPC says something like "Oh, i see that you have a very nice" and then the name of the hat, for example "Oh, i see that you have a very nice mexican hat". 
+
+All the fields and property of Talk class are public so you can edit the text how you want, but actually there is a simpler way to do it, for example this can be done using "Runtime Variables" and "Modifiers". Object of class "Runtime Variables" contains a "name" and a "value". 
+
+In the editor you can chose only the name, because the value is supposed to be filled at runtime by your game. How it depends by your implementation, i will suggest some ways in the next section. 
+
+In addition to a Runtime Variables, you need a "Load Runtime Variable Modifier" in the text. In the text, you can add modifier like this {modName,modArgument}. The name of the load runtime variable modifier is "loadRV". So you dialogue in the editor will appear like this
+
+![image](https://user-images.githubusercontent.com/96582680/154974301-961e361f-8b3a-49e1-be3c-e74494f1a337.png)
+
+When you instance a new dialogue class object readed from a dialogue file you need to fill all the runtime variables and all the conditions. Then the value that you assigned to the "CurrentHat" Runtime Variable object will be automatically placed inside the Talk text. I will explain this better in the next section. If you are afraid to made mistakes check the small rectangle in the upper-right corner of the Talk text textbox, if it is red, all your modifier will work. If it is red like in the following example, hover with the mouse over the rectangle to get information about what is wrong. In this example, i will write the name of the runtime variable wrong:
+
+![image](https://user-images.githubusercontent.com/96582680/154975501-0ac0fd1f-5fba-4acb-9d79-39581e450f2e.png)
 
