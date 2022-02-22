@@ -108,16 +108,14 @@ Then the value that you assigned to the "CurrentHat" RuntimeVariable object will
 
 Now you should have a basic grasp about what is a Dialogue, a Talk, a Condition, a RuntimeVariable, an Action and a Modifier
 
-### 3.2: How to use GPGD Dialogue System in your games
+## 3.2: How to use GPGD Dialogue System in your games
 
 Ok, let's say that you just created a dialogue in the editor (an editor overview / tutorial is in the next section) and you want to use it in your game. 
 First of all you need to export it. Press Ctrl + E or go un File > Export. Put the file somewhere inside your game project folder. 
 
 Now, to get a Dialogue class object from that file you need first of all to get the content of that file and put in in a string. You can do this in many ways, it depents on your engine (if it has some features for interacting with game files) and you have to know how to do that, but it is a pretty easy task. Then you can convert that string into a dialogue object calling DialogueManager.JSONParse(yourstring) if you are working in a NON NetFramework4.x environment, otherwise you call DialogueManager.JSONParseNetFr4x(yourstring). If you don't know wich one use, in Unity and Godot you have to use DialogueManager.JSONParseNetFr4x. In general, if JSONParse/JOSNParseNetFr4x return an error, try switching the function. An example could be the following
 
-string dialStr = File.ReadAllText(filePath);
-
-Dialogue dial = JSONParseNetFr4x(dialStr);
+![image](https://user-images.githubusercontent.com/96582680/155179835-e2fead5d-c289-4a81-a04b-d755a3627610.png)
 
 Now you got your dialogue!
 
@@ -127,7 +125,20 @@ Now, every time you get a dialogue the first thing to do is to fill the outcomes
 
 ![image](https://user-images.githubusercontent.com/96582680/155018140-d5a2e906-4cc2-4762-ba81-aa00cdca15ea.png)
 
-And in that switch you can add every condition you want, every time you need to add a new kind of condition, you just add in the switch. You can do a pretty similar thing with the RuntimeVariables as you can see in the following:
+And in that switch you can define every condition you want inside your game and then add it in your dialogue, and eventually when you need to define a new kind of condition, you just add in the switch. You can do a pretty similar thing with the RuntimeVariables. It doesn't matter how you do it, its all up to you, but both Condition outcomes AND RuntimeVariables values should be filled before starting the dialogue itself.
+
+You "start" the dialogue and continue into it witch only one function, NextStep() wich has an overload to use if the dialogue has answers, NextStep(answerIndex).
+For example, the simplest implementation possibile is the following:
+
+![image](https://user-images.githubusercontent.com/96582680/155181499-4e13199b-dfc4-4b92-afdc-0fb59b0e7f0b.png)
+
+To test the dialogue library initially i created a console applications with this code:
+
+![image](https://user-images.githubusercontent.com/96582680/155181774-27c1c49c-8d81-4383-aa04-c1a1fff72bfb.png)
+
+
+
+
 
 
 
