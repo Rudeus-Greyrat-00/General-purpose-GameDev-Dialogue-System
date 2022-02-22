@@ -127,14 +127,39 @@ Now, every time you get a dialogue the first thing to do is to fill the outcomes
 
 And in that switch you can define every condition you want inside your game and then add it in your dialogue, and eventually when you need to define a new kind of condition, you just add in the switch. You can do a pretty similar thing with the RuntimeVariables. It doesn't matter how you do it, its all up to you, but both Condition outcomes AND RuntimeVariables values should be filled before starting the dialogue itself.
 
+___________________________________________________________________________________________________________________
+
 You "start" the dialogue and continue into it witch only one function, NextStep() wich has an overload to use if the dialogue has answers, NextStep(answerIndex).
 For example, the simplest implementation possibile is the following:
 
-![image](https://user-images.githubusercontent.com/96582680/155181499-4e13199b-dfc4-4b92-afdc-0fb59b0e7f0b.png)
+![image](https://user-images.githubusercontent.com/96582680/155188380-ea0f3c15-6ea8-4c93-9746-7d45e5fd226f.png)
 
 To test the dialogue library initially i created a console applications with this code:
 
 ![image](https://user-images.githubusercontent.com/96582680/155181774-27c1c49c-8d81-4383-aa04-c1a1fff72bfb.png)
+
+You should access the current talk always using yourDialogueObject.CurrentTalk property, because modifier are applied in the getter of .CurrentTalk property. 
+
+As you can see NextStep functions return a list of DialogueActions, actually they are all GenericEngineHandledAction, they contains a name and a value. Theese are informations containers, you can use it as you want. Actions returned are the current talk's ones, and they are returned based of wich answer the player choosed, if the condition is verified, etcetra. They could be managed like in the following example:
+
+![image](https://user-images.githubusercontent.com/96582680/155184757-e3987aeb-5926-4ed8-9fac-f1a5e1649287.png)
+
+This is pretty much all. You just need to do like this code and all the features of the dialogue should work properly. In theese examples i showed you all the classes, fields and property that you will need when using this library. 
+
+You should be able to achieve pretty much everything I did't provide working with actions, for example, if in your dialogue box in your game you have a section where it should appear a sprite of the character face, you can define an action inside your project that load the file called gact.value. So in every talk where the character sprite is supposed to change, you would add an action called something like "loadCharacterSprite" with the file name of the sprite in the Action Value.
+
+___________________________________________________________________________________________________________________
+
+Before talking about the editor, i want to specify a detail in the following talk:
+
+![image](https://user-images.githubusercontent.com/96582680/155187815-b4164802-4bae-4cd8-8be8-f3376ac2db64.png)
+
+When you call NextStep(answerIndex):
+- Action called "Action A" will always be returned
+- Action called "Action B" will be returned only if the player choosed the answer that contains that action ("Im fine")
+- Action called "Action C" will be returned only if the player choosed the answer that contains that action ("Im not fine at all") AND if the answer condition is true
+
+## 3.3: Editor overview
 
 
 
