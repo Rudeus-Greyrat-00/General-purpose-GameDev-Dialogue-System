@@ -1,5 +1,3 @@
-# DOCUMENTATION WORK IN PROGRESS
-
 # General Purpose Game Development Dialogue System (AKA GPGD Dialogue System)
 General purpose C# libraries (and editor) to create NPC dialogues to be used in games in any C# based game engine
 
