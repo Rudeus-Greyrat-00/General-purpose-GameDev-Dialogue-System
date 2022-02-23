@@ -177,5 +177,28 @@ After you finighed, you can test the behaviour of your dialogue by pressing F5 o
 
 When you finished filling values, the dialogue will start. If a talk contains one or more answers, you will be asked to choose one of the avaible. After each talk, the console will write the list of DialogueActions returned by that talk. If there isn't, it will show an empty list. 
 
+When the current talk has not viable successors, it means that an endpoint is reached, so the dialogue ended.
+
+## 3.4: Good practices
+
+First of all, it is of course a good practice to test the behaviour of your dialogue before exporting it.
+
+Another good practice, this time from an implementation point of view, is that Runtime Variables and Conditions outcomes should be filled before calling for the first time "NextSetp()" on a dialogue class object. You can do differently, but keep in mind that if "NextSetp()" is called when the current talk condition outcomes are not determined, an exception will be throw. 
+
+If you understand and agree to do like I suggest, you'll understand why the following example is a bad practice:
+
+![image](https://user-images.githubusercontent.com/96582680/155335017-c4a17bce-71be-45eb-bd0a-8728593d43db.png)
+
+And this is not:
+
+![image](https://user-images.githubusercontent.com/96582680/155335155-6b878600-60c1-4f15-8e4b-70baacd7bd28.png)
+
+In fact, if you set all the conditions outcomes only one time BEFORE calling NestSetp() for the first time, until the dialogue will finish the condition outcomes won't change. So, if you build a dialogue like in the first image, if you followrd the first advie, you'll be stuck in a loop forever. The only way breaking that loop would be to change the outcomes when the dialogue is still running, wich is a bad practice.
+
+In the second image instead, each time the player can choose between different answers, and at least one of it it's an escape route, so the player can exit the dialogue, it has just to choose the right question.
+
+Of course theese are only advices, you can work differently, but i think that doing like I suggest will eventually help you to keep things clear and simple.
+
+
 
 
