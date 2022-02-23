@@ -193,7 +193,7 @@ And this is not:
 
 ![image](https://user-images.githubusercontent.com/96582680/155335155-6b878600-60c1-4f15-8e4b-70baacd7bd28.png)
 
-In fact, if you set all the conditions outcomes only one time BEFORE calling NestSetp() for the first time, until the dialogue will finish the condition outcomes won't change. So, if you build a dialogue like in the first image, if you followrd the first advie, you'll be stuck in a loop forever. The only way breaking that loop would be to change the outcomes when the dialogue is still running, wich is a bad practice.
+In fact, if you set all the conditions outcomes only one time BEFORE calling NestSetp() for the first time, until the dialogue will finish the condition outcomes won't change. So, if you build a dialogue like in the first image, if you followed the first advice, you'll be stuck in a loop forever. The only way breaking that loop would be to change the outcomes when the dialogue is still running, wich is a bad practice.
 
 In the second image instead, each time the player can choose between different answers, and at least one of it it's an escape route, so the player can exit the dialogue, it has just to choose the right question.
 
