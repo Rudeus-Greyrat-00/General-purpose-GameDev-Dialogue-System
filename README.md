@@ -161,9 +161,21 @@ When you call NextStep(answerIndex):
 
 ## 3.3: Editor overview
 
+Whan you open the editor you start in a new project. You can zoom in and zoom out using the mouse wheel. To keep the mouse wheel clicked and moving the mouse at the same time cause the entire dialogue to move. You can reset zoom and position by clicking on "View" > "Initial position and scale".
 
+To add talks you can press Ctrl + T or go to "Edit" > "New Talk".
 
+To connect two talks, you always connect one of the white circles in the start talk to the white square of the next talk. Click with the left mouse button on the circle, and keep clicked, at the same time move the mouse to the next talk's white rectangle. A line will appear linking the two talks. You can delete the line by clicking on it with the right mouse button.
 
+While you are working to a dialogue, you will certainly notice that some white circles become interdicted (a red X will appear over it). It is ok, it happen for example if you add answers to your talk, or if you add a condition. It meas that that path will never be taken. Like in the following example:
+
+![image](https://user-images.githubusercontent.com/96582680/155330888-45912ca2-d691-4551-bef3-71d4ad1f87d8.png)
+
+The player can only choose yes or no. If it choose yes, the a path will be followed, otherwise the other path will be followed. There is not a case when the red dotted line path will be followed. It will never happen. If you need a third option you just add an answer.
+
+After you finighed, you can test the behaviour of your dialogue by pressing F5 or going to "Edit" > "Test dialogue". A black console will appear. You can hide that by pressing Esc. You can un-hide that by going on "View" > "Dialogue simulation console". If your dialogue contains Runtime Variables or Conditions, you will be asked to choose a value for each runtime variable, like if you was the game. There is a text box in the lower part of the console. There you can write whatever you want if you are filling a Runtime Variable value, or you can write "true","t","false","f" if you are filling an outcome for a condition. After you write whatever you write, just press "Enter".
+
+When you finished filling values, the dialogue will start. If a talk contains one or more answers, you will be asked to choose one of the avaible. After each talk, the console will write the list of DialogueActions returned by that talk. If there isn't, it will show an empty list. 
 
 
 
